@@ -30,9 +30,9 @@ img {
     position: absolute;
     transform: translateY(-50%);
     top: 50%;
-    width: 100%;
+    width: 50%;
     text-align: left;
-    font-size: 50px;
+    font-size: 45px;
 }
 
 /* Number text (1/3 etc) */
@@ -70,6 +70,24 @@ body.header-transparent header {
     background-color: #303540;
 }
 
+.tp-tab-title{
+    color: rgb(15 23 42);
+    font-weight: 700;
+}
+.tp-tab-date{
+    color: rgb(15 23 42);
+    font-weight: 400;
+}
+
+.bg-gradint{
+    background: linear-gradient(90deg, rgba(255,255,255,0.80) 30%, rgba(255,255,255,0) 80%);width: 100%;height: 768px;position: absolute;
+}
+.logo-dt{
+    display: flex !important;
+}
+.logo-mb{
+    display: none !important;
+}
 @keyframes fade {
     from {
         opacity: .4
@@ -81,8 +99,26 @@ body.header-transparent header {
 }
 
 /* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
+@media screen and (max-width: 991px) {
+    .text {
+        top: unset;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+        font-size: 30px;
+    }
+    .bg-gradint{
+        background-color: rgb(255 255 255 / 57%);
+    }
+    .logo-dt{
+        display: none !important;
+    }
+    .logo-mb{
+        display: flex !important;
+    }
+}
+/* @media only screen and (max-width: 300px) {
     .text {
         font-size: 11px
     }
-}
+} */
