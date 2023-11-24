@@ -30,7 +30,7 @@ img {
     position: absolute;
     transform: translateY(-50%);
     top: 50%;
-    width: 50%;
+    width: 65%;
     text-align: left;
     font-size: 45px;
 }
@@ -70,24 +70,68 @@ body.header-transparent header {
     background-color: #303540;
 }
 
-.tp-tab-title{
-    color: rgb(15 23 42);
+.tp-tab-title {
+    /* color: rgb(15 23 42); */
+    color :#fff;
     font-weight: 700;
 }
-.tp-tab-date{
-    color: rgb(15 23 42);
+
+.tp-tab-date {
+    /* color: rgb(15 23 42); */
+    color :#fff;
     font-weight: 400;
 }
 
-.bg-gradint{
-    background: linear-gradient(90deg, rgba(255,255,255,0.80) 30%, rgba(255,255,255,0) 80%);width: 100%;height: 768px;position: absolute;
+.bg-gradint {
+    /* background: linear-gradient(90deg, rgba(255, 255, 255, 0.80) 30%, rgba(255, 255, 255, 0) 80%); */
+    width: 100%;
+    height: 768px;
+    position: absolute;
 }
-.logo-dt{
+
+.logo-dt {
     display: flex !important;
 }
-.logo-mb{
+
+.logo-mb {
     display: none !important;
 }
+
+.br{
+    display: none;
+}
+
+.welcome-section .blog-list.style-2 .blog-post .entry-header .entry-title {
+    font-size: 20px !important;
+}
+
+.site-header-top .topbar-info li a {
+    font-size: 16px !important;
+    font-weight: 700 !important;
+}
+
+.hesperiden .tp-tab-content .tp-tab-title {
+    font-size: 20px !important;
+}
+
+.hesperiden .tp-tab.selected {
+    height: 360px !important;
+}
+
+.tp-tabs {
+    height: 300px !important;
+}
+
+.box-item p {
+    color: #a6a6a6;
+    font-size: 18px !important;
+}
+
+.welcome-section .blog-list.style-2 .blog-post .entry-content p {
+    color: #a6a6a6;
+    font-size: 18px !important;
+}
+
 @keyframes fade {
     from {
         opacity: .4
@@ -95,6 +139,12 @@ body.header-transparent header {
 
     to {
         opacity: 1
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .welcome-section .blog-list.style-2 .blog-post .entry-header .entry-title {
+        font-size: 18px !important;
     }
 }
 
@@ -107,18 +157,35 @@ body.header-transparent header {
         text-align: center;
         font-size: 30px;
     }
-    .bg-gradint{
+
+    /* .bg-gradint {
         background-color: rgb(255 255 255 / 57%);
     }
-    .logo-dt{
+    .bg-gradint {
+        background: linear-gradient(90deg, rgba(255, 255, 255, 0.80) 30%, rgba(255, 255, 255, 0) 80%);
+    } */
+
+    .logo-dt {
         display: none !important;
     }
-    .logo-mb{
+
+    .logo-mb {
         display: flex !important;
     }
+
+    .br{
+        display: block;
+    }
 }
+
 /* @media only screen and (max-width: 300px) {
     .text {
         font-size: 11px
     }
 } */
+
+@media screen and (max-width: 768px) {
+    body.responsive-layout.header-hamburger-menu header .site-logo span.logo-text {
+        display: block !important;
+    }
+}
