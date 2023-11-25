@@ -132,6 +132,10 @@ body.header-transparent header {
     font-size: 18px !important;
 }
 
+.hidden-mb{
+    display: block;
+}
+
 @keyframes fade {
     from {
         opacity: .4
@@ -187,5 +191,14 @@ body.header-transparent header {
 @media screen and (max-width: 768px) {
     body.responsive-layout.header-hamburger-menu header .site-logo span.logo-text {
         display: block !important;
+    }
+    body.responsive-layout.header-topbar .site-header-top {
+        display: flex !important;
+    }
+    body.header-sticky.header-topbar.header-transparent-overlay.hide-on-scroll header, body.header-sticky.header-topbar.header-transparent.hide-on-scroll header {
+        /* top: 40px !important; */
+    }
+    .hidden-mb{
+        display: none !important;
     }
 }
